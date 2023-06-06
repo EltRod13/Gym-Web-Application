@@ -1,0 +1,83 @@
+body {
+    background: url('../images/gymmania.png?anyValueHere123') no-repeat fixed center center;
+    background-size: cover;
+    font-family: Montserrat;
+}
+
+
+.card{
+    border:none;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#e7bebe;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#ff000d;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 20px 0;
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:15px;
+}
+
+
+.buttons button:nth-child(1){
+       border:1px solid #ff000d !important;
+       color:#ff000d;
+       height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+       border:1px solid #ff000d !important;
+       color:#fff;
+       height:40px;
+       background-color:#ff000d;
+}
+
+.buttons button:nth-child(2){
+       border:1px solid #ff000d !important;
+       background-color:#ff000d;
+       color:#fff;
+        height:40px;
+}
